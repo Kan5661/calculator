@@ -43,15 +43,45 @@ body {
 .operationButtons {
     background-color: orange;
     /* flex-grow: 1; */
-    width: 25%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+.operationButton {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(142, 105, 4)
 }
 
 
-
 .clear {
-    background-color: grey;
+    background-color: rgb(97, 96, 96);
     /* flex-grow: 1; */
     height: 20%;
+    display: flex;
+}
+.clearAll {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border: 1px rgba(0, 0, 0, 0.581) solid;
+    margin: 0.1px;
+}
+.del {
+    width: 66.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border: 1px rgba(0, 0, 0, 0.471) solid;
+    margin: 0.1px;
 }
 
 .numbers {
@@ -78,3 +108,4 @@ body {
 #zero {
     width: 65.5%
 }
+
