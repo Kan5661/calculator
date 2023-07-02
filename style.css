@@ -15,9 +15,9 @@ body {
     border-radius: 10px;
     padding: 2px;
     box-shadow: black 0px 0px 50px -10px;
+    -webkit-user-select: none;
+    user-select: none;
 }
-
-
 
 .evaluation {
     background-color: rgba(58, 52, 52, 0.627);
@@ -47,21 +47,24 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1px;
+    cursor: pointer;
 }
 .operationButton {
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(142, 105, 4)
+    border: 1px solid rgb(142, 105, 4);
+    font-weight: 800;
+    font-size: 25px;
+    color: rgb(216, 225, 255);
 }
 
-
 .clear {
-    background-color: rgb(97, 96, 96);
     /* flex-grow: 1; */
     height: 20%;
     display: flex;
+    cursor: pointer;
 }
 .clearAll {
     width: 33%;
@@ -72,6 +75,7 @@ body {
     font-size: 20px;
     border: 1px rgba(0, 0, 0, 0.581) solid;
     margin: 0.1px;
+    background-color: rgb(97, 96, 96)
 }
 .del {
     width: 66.5%;
@@ -82,6 +86,7 @@ body {
     font-size: 20px;
     border: 1px rgba(0, 0, 0, 0.471) solid;
     margin: 0.1px;
+    background-color: rgb(97, 96, 96);
 }
 
 .numbers {
@@ -98,14 +103,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(159, 159, 159);
+    background-color: rgba(145, 145, 145, 0.636);
     color: white;
     font-size: 35px;
     border: 1px rgba(0, 0, 0, 0.471) solid;
     margin: 0.1px;
+    cursor: pointer;
+
 }
 
 #zero {
     width: 65.5%
 }
 
+.number:hover {
+    background-color: rgba(188, 188, 188, 0.636);;
+}
+
+.number:active {
+    background-color: rgba(100, 100, 100, 0.636);;
+}
+
+.clearAll:hover, .del:hover{
+    background-color: rgb(106, 106, 106);
+}
+
+.clearAll:active, .del:active {
+    background-color: rgb(77, 77, 77)
+}
+
+.operationButton:hover {
+    background-color: rgb(255, 185, 54);
+}
+.operationButton:active {
+    background-color: rgb(191, 124, 0);
+}
