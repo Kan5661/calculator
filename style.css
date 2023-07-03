@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(123, 135, 145);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,20 +15,28 @@ body {
     border-radius: 10px;
     padding: 2px;
     box-shadow: black 0px 0px 50px -10px;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 .evaluation {
     background-color: rgba(58, 52, 52, 0.627);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
     height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    font-size: 45px;
+    padding: 0 15px 0 15px;
+    overflow: scroll;
 }
 
 .calculatorButtons {
     background-color: rgba(146, 146, 146, 0.668);
     height: 75%;
     display: flex;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: 10px;
 }
 
 
@@ -38,6 +46,7 @@ body {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .operationButtons {
@@ -48,6 +57,7 @@ body {
     flex-direction: column;
     margin: 1px;
     cursor: pointer;
+    border-radius: 0 0 10px 0;
 }
 .operationButton {
     height: 20%;
@@ -57,7 +67,7 @@ body {
     border: 1px solid rgb(142, 105, 4);
     font-weight: 800;
     font-size: 25px;
-    color: rgb(216, 225, 255);
+    color: white
 }
 
 .clear {
@@ -93,8 +103,9 @@ body {
     background-color: rgb(147, 147, 147);
     flex-grow: 4;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .number {
@@ -113,7 +124,7 @@ body {
 }
 
 #zero {
-    width: 65.5%
+    width: 65.5%;
 }
 
 .number:hover {
@@ -137,4 +148,11 @@ body {
 }
 .operationButton:active {
     background-color: rgb(191, 124, 0);
+}
+
+#decimal {
+    border-radius: 0 0 0 10px;
+}
+#evaluate {
+    border-radius: 0 0 10px 0;
 }
