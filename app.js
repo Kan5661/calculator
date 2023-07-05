@@ -30,9 +30,15 @@ function number_button(value) {
 
 function change_display_value(concatString) {
     value = document.getElementsByClassName("evaluation")[0]
-    value.innerText += concatString
-    console.log(`eval length: ${value.innerText.length}`)
-}
+    if (value.innerText.includes('.') && concatString == '.') {
+        return
+    }
+    else {
+        value.innerText += concatString
+        console.log(`eval length: ${value.innerText.length}`)
+    }
+    }
+
 
 function clear() {
     document.getElementsByClassName("evaluation")[0].innerText = ''
