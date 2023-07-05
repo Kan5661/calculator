@@ -1,5 +1,4 @@
-let displayedValue
-let num1, num2, operationType
+let evaluatedNum, num1, num2, operationType
 
 // add event listener to the operation buttons (orange buttons)
 let operation_buttons = document.getElementsByClassName("operationButton")
@@ -19,6 +18,15 @@ for (let i = 0; i < number_buttons.length; i++) {
 let clear_button = document.getElementById("clear")
 clear_button.addEventListener('click', clear)
 
+// add event listener to delete button
+
+let delete_button = document.getElementById("delete")
+delete_button.addEventListener('click', pop)
+
+
+
+
+// the (fun)c stuffs
 function get_operation(type) {
     console.log(type)
 }
@@ -42,4 +50,9 @@ function change_display_value(concatString) {
 
 function clear() {
     document.getElementsByClassName("evaluation")[0].innerText = ''
+}
+
+function pop() {
+    value = document.getElementsByClassName("evaluation")[0]
+    value.innerText = value.innerText.slice(0, -1)
 }
