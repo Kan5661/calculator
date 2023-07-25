@@ -30,10 +30,10 @@ delete_button.addEventListener('click', pop)
 // the (fun)c stuffs
 function evaluate() {
     let answer
-    if (operationType = '+') {
+    if (operationType == '+') {
         answer = num1 + num2
     }
-    if (operationType = '–') {
+    if (operationType == '–') {
         answer = num1 - num2
     }
     return answer
